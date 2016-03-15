@@ -2,4 +2,14 @@
 
 import UIKit
 
-var str = "Hello, Swift"
+/**
+ * Variables
+ */
+
+// Constants
+let name = "Yong Su"
+let gender = "Male"
+
+// Mutable variables
+var greeting = "Hello, Swift"
+
