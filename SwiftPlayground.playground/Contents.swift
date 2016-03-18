@@ -112,8 +112,18 @@ func myFunction() {
     print("This is a simple function")
 }
 
+// name and age are constants
 func anotherFunction(name:String, age:Int) {
     print("\(name), \(age)")
 }
 
 anotherFunction("Su", age:17)
+
+// using var will make the params mutable
+func functionWithVars(var name : String, var age : Int) {
+    name = "Hello " + name
+    age += 4
+    print("\(name), \(age)")
+}
+
+functionWithVars("Su", age:17)
