@@ -111,3 +111,9 @@ print("The total is\(total)")
 func myFunction() {
     print("This is a simple function")
 }
+
+func anotherFunction(name:String, age:Int) {
+    print("\(name), \(age)")
+}
+
+anotherFunction("Su", 17)
