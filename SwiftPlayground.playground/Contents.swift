@@ -23,4 +23,10 @@ var isActive = true
 // Operations
 var sum : Int = 1 + 2
 
+// String Interpolation using \()
+let city = "Sydney"
+var day = "Thursday"
+var temp = 75
+var msg = "The high for \(city) on \(day) is \(temp) degress."
+
 
