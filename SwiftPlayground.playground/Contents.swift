@@ -116,4 +116,4 @@ func anotherFunction(name:String, age:Int) {
     print("\(name), \(age)")
 }
 
-anotherFunction("Su", 17)
+anotherFunction("Su", age:17)
