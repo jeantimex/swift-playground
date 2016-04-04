@@ -94,6 +94,30 @@ var unitPrice = 34.55
 print("The amount is \(Double(quantity) * unitPrice)")
 
 // ----------------------------------------
+// Array
+// ----------------------------------------
+
+// 1. Creating an Empty Array
+var someInts = [Int]()
+print("someInts is of type [Int] with \(someInts.count) items.")
+// Prints "someInts is of type [Int] with 0 items."
+
+someInts.append(3)
+// someInts now contains 1 value of type Int
+someInts = []
+// someInts is now an empty array, but is still of type [Int]
+
+var threeDoubles = [Double](count: 3, repeatedValue: 0.0)
+// threeDoubles is of type [Double], and equals [0.0, 0.0, 0.0]
+
+// 2. Creating an Array by Adding Two Arrays Together
+var anotherThreeDoubles = [Double](count: 3, repeatedValue: 2.5)
+// anotherThreeDoubles is of type [Double], and equals [2.5, 2.5, 2.5]
+
+var sixDoubles = threeDoubles + anotherThreeDoubles
+// sixDoubles is inferred as [Double], and equals [0.0, 0.0, 0.0, 2.5, 2.5, 2.5]
+
+// ----------------------------------------
 // Conditional Operations
 // ----------------------------------------
 
