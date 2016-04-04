@@ -30,6 +30,51 @@ var age = 17
 var isActive = true
 
 // ----------------------------------------
+// Optional Variables
+// ----------------------------------------
+
+var optValue : String?
+// equals to: var optValue = Optional<String>
+var optValue2 = Optional<String>()
+
+if (optValue != nil) {
+    print("optValue has value")
+}
+
+let hashValue = optValue?.hashValue
+// here the ? means whether the compiler should chain .hashValue
+// of course not, because optValue is nil
+// Optional is an enum, it has two values:
+// Optional.None & Optional.Some
+// so it actually wraps the variable
+// that's why you see {Some "Hello World"}
+
+// There are two scenarios to use optional variables
+// 1. declare an optional var
+// 2. operator that decides whether chain the followed response
+
+// How to unwrap the optional variables
+// 1. use optional binding
+if let str = optValue {
+    let hashValue = str.hashValue
+}
+
+// 2. use !
+// here ! means our optValue must not be nil, use it freely
+// ! also means forcely unwrapping an Optional variable
+if (optValue != nil) {
+    let hashValue = optValue!.hashValue
+}
+
+// 3. Implicitly Unwrapped Optionals
+var myLabel : UILabel!
+// equals to
+var myLabel2: ImplicitlyUnwrappedOptional<UILabel>
+// so that when we use myLabel, we don't need to explicitly unwrap it
+// it's automatically unwrapped for us, but make sure the value is not nil
+// otherwise it will cause runtime error
+
+// ----------------------------------------
 // Operations
 // ----------------------------------------
 
