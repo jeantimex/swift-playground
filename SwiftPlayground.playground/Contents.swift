@@ -74,6 +74,11 @@ var myLabel2: ImplicitlyUnwrappedOptional<UILabel>
 // it's automatically unwrapped for us, but make sure the value is not nil
 // otherwise it will cause runtime error
 
+// ?? is 'Nil Coalescing Operator' which allows setting either
+// the unwrapped value or an alternative value in the case that the optional value is nil.
+var optValue3 = optValue ?? ""
+print("optValue3 is \(optValue3)")
+
 // ----------------------------------------
 // Operations
 // ----------------------------------------
