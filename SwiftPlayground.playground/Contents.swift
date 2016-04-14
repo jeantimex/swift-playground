@@ -201,3 +201,12 @@ func functionWithVars(var name : String, var age : Int) {
 }
 
 functionWithVars("Su", age:17)
+
+func optionalParam(opt: String?) {
+    if let opt = opt {
+        print(opt)
+    }
+}
+
+optionalParam(nil)
+optionalParam("Su")
